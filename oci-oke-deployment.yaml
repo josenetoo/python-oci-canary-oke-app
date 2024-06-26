@@ -15,7 +15,7 @@ spec:
       containers:
         - name: sample-oke-canary-app
           # enter the path to your image, be sure to include the correct region prefix
-          image: us-ashburn-1.ocir.io/fahdabidiroottenancy/rahul/mr-devops/mr-devops-oke-canary-sample:${BUILDRUN_HASH}
+          image: vcp.ocir.io/ax5b2hhr8y7h/python-canary-oke:${BUILDRUN_HASH}
           imagePullPolicy: Always
           ports:
             - containerPort: 80

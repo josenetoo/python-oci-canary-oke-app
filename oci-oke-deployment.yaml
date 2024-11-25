@@ -22,11 +22,11 @@ spec:
               protocol: TCP
           resources:
             requests:
-              cpu: 2
-              memory: 1Gi
+              cpu: 100m
+              memory: 256Mi
             limits:
-              cpu: 4
-              memory: 2Gi
+              cpu: 200m
+              memory: 512Mi
           livenessProbe:
             exec:
               command:

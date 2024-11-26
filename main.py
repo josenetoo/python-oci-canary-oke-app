@@ -9,6 +9,6 @@ app = FastAPI()
 
 @app.get("/canary")
 def read_root():
-    version="2.0"
+    version="3.0"
     namespace = os.getenv('POD_NAMESPACE', default = 'ns-red')
     return {"Message": "Oracle DevOps Day - OCI Devops!!","Version":version,"Namespace":namespace}
